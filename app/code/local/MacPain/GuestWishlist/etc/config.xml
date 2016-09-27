@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MacPain_GuestWishlist>
+            <version>1.0.0.0</version>
+        </MacPain_GuestWishlist>
+    </modules>
+    <global>
+        <helpers>
+            <guestwishlist>
+                <class>MacPain_GuestWishlist_Helper</class>
+            </guestwishlist>
+        </helpers>
+        <resources>
+            <guestwishlist_setup>
+                <setup>
+                    <module>MacPain_GuestWishlist</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </guestwishlist_setup>
+            <guestwishlist_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </guestwishlist_write>
+            <guestwishlist_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </guestwishlist_read>
+        </resources>
+    </global>
+</config>
